@@ -1,0 +1,135 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  overflow:hidden;
+  background:#000;
+  color:white;
+}
+
+canvas{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  z-index:-1;
+}
+
+.container{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+  text-align:center;
+}
+
+.card{
+  background:rgba(0,0,0,0.42);
+  backdrop-filter:blur(8px);
+  padding:clamp(20px, 4vw, 35px);
+  border-radius:22px;
+  width:90%;
+  max-width:380px;
+  box-shadow:0 0 30px rgba(255,120,0,0.45);
+}
+
+
+
+
+/* 📱 AJUSTES SOLO PARA TELÉFONOS */
+@media (max-width: 480px) {
+
+  .card{
+    max-width: 300px;      /* más angosta */
+    padding: 18px;         /* menos espacio interno */
+    backdrop-filter: blur(5px);
+    background: rgba(0,0,0,0.30); /* más transparente */
+    box-shadow: 0 0 20px rgba(255,120,0,0.35);
+  }
+
+  h1{
+    font-size: 1.7rem;
+  }
+
+  .subtitle{
+    font-size: 0.95rem;
+  }
+
+  .box{
+    min-width: 70px;
+    padding: 10px 12px;
+  }
+
+  .num{
+    font-size: 1.6rem;
+  }
+
+}
+
+h1{
+  font-size:2.2rem;
+  margin-bottom:10px;
+}
+
+.subtitle{
+  font-size:1.1rem;
+  opacity:0.9;
+}
+
+.countdown{
+  display:flex;
+  gap:15px;
+  margin:30px 0;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+
+.box{
+  background:rgba(255,255,255,0.1);
+  padding:15px 20px;
+  border-radius:15px;
+  min-width:90px;
+}
+
+.num{
+  font-size:2rem;
+  font-weight:700;
+}
+
+.label{
+  font-size:0.7rem;
+  letter-spacing:1px;
+  opacity:0.8;
+}
+
+.credit{
+  margin-top:18px;
+  font-size:0.75rem;
+  opacity:0.75;
+  letter-spacing:0.5px;
+}
+
+.footer{
+  margin-top:15px;
+  font-size:0.95rem;
+  opacity:0.85;
+}
+
+#musicBtn{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  padding:12px 20px;
+  border:none;
+  border-radius:30px;
+  cursor:pointer;
+  background:linear-gradient(45deg,#ff9800,#ff5722);
+  color:white;
+  font-weight:bold;
+  box-shadow:0 0 15px rgba(255,100,0,0.8);
+}
