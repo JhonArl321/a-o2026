@@ -133,3 +133,35 @@ h1{
   font-weight:bold;
   box-shadow:0 0 15px rgba(255,100,0,0.8);
 }
+
+
+#musicBtn{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+  padding: 12px 20px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+
+  background: linear-gradient(45deg,#ff9800,#ff5722);
+  color: white;
+  font-weight: bold;
+
+  box-shadow: 0 0 15px rgba(255,100,0,0.8);
+  z-index: 9999; /* 🔥 SIEMPRE arriba */
+}
+
+/* 📱 AJUSTES PARA TELÉFONO */
+@media (max-width: 480px){
+  #musicBtn{
+    bottom: 12px;
+    right: 50%;
+    transform: translateX(50%);
+
+    padding: 10px 18px;
+    font-size: 0.85rem;
+    border-radius: 25px;
+  }
+}
